@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+AddCharset utf-8 .html .css .js .xml .json
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

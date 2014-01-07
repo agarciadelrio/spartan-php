@@ -1,4 +1,4 @@
 spartan-php
 ===========
 
-A very simple web framework
+A very simple web app framework
