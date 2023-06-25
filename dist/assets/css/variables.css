@@ -1,0 +1,52 @@
+:root {
+  --body-ff: "Oswald", sans-serif, system-ui;
+  --condensed-ff: "Oswald", sans-serif, system-ui;
+  --body-bg: #FFFFFF;
+  --body-cl: #000000;
+  --brand-rgb: 0,155,219;
+  --brand-bg: rgb(var(--brand-rgb));
+  --brand-dark: #072F68;
+  --brand-dark-05: rgba(7, 47, 104, 0.641);
+  --brand-light: #009BDB;
+  --brand-light-50: #DFF0FA;
+  --brand-light-alpha: rgba(0, 153, 219, 0.65);
+  --brand-light-05: hsla(198, 100%, 43%, 0.149);
+  --brand-cl: #fff;
+  --buy-50: hsl(200, 75%, 90%);
+  --buy-900: hsl(201, 30%, 30%);
+  --brand-red: #A34D4A;
+  --brand-red-a: rgba(163, 77, 74, 0.90);
+  --bran-red-50: #FA7273;
+
+  --mainmenu-bg: #072F68;
+  --mainmenu-bg-from: #072F68;
+  --mainmenu-bg-to: #009BDB;
+  --mainmenu-cl: #FFFFFF;
+
+  --submenuBg: #ffffff;
+  --submenuCL: #000000;
+  --submenuHoBg: var(--brand-light);
+  --submenuHoCl: var(--brand-cl);
+
+  --BuyTicket-bg: orange;
+  --BuyTicket-cl: white;
+
+  --QuickBuy-bg: #072F68;
+  --QuickBuy-cl: #FFFFFF;
+  --QuickBuy-bg-from: #009BDB;
+  --QuickBuy-light: #009BDB;
+  --QuickBuy-dark: #072F68;
+  --QuickBuy-bg-to: #072F68;
+  --QuickBuy-buy-bg: #fff;
+  --QuickBuy-buy-cl: #072F68;
+
+  --FooterBg: #000;
+  --FooterCl: #fff;
+  --FooterBtnBg: #A34D4A;
+  --FooterBtnCl: #fff;
+
+  --EventBg: #009BDB;
+  --EventCl: #fff;
+  --EventDark: #072F68;
+  --EventLight: #009BDB;
+}

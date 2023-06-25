@@ -1,0 +1,30 @@
+AddDefaultCharset UTF-8
+AddCharset utf-8 .html .css .js .xml .json
+
+RewriteEngine On
+RewriteBase /
+
+#<Limit GET POST PUT>
+#order deny,allow
+#deny from all
+#allow from xxx.xxx.xxx.xx
+#</Limit>
+
+<FilesMatch "\.(?i:gif|jpe?g|png|ico|css|js|svg|webp)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=43200, public, must-revalidate"
+  </IfModule>
+</FilesMatch>
+
+<Files "config.json">
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+# RewriteRule ^assets/(.*)$ app/assets/$1
+# RewriteRule ^securimage_show$ lib/vendor/securimage/securimage_show.php
+# RewriteRule ^securimage/(.*)$ lib/vendor/securimage/$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [PT,NE]

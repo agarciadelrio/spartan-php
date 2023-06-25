@@ -1,0 +1,1 @@
+php -dxdebug.mode=debug -dxdebug.client_port=9003 -dxdebug.start_with_request=yes -S 0.0.0.0:8080 -t dist server.php
