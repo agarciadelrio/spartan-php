@@ -1,5 +1,7 @@
 <?php
 session_start();
+date_default_timezone_set("Atlantic/Canary");
+setlocale(LC_ALL,"es_ES@euro","es_ES","esp");
 define('VERSION', '0.0.0');
 define('ROOT', __DIR__);
 define('DATA',  ROOT . '/data');
